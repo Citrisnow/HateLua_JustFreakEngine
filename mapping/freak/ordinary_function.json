@@ -1,0 +1,25 @@
+{
+    "ordinary_function": {
+        "import": "导入",
+        "require": "导入",
+        "print": "打印",
+        "trace": "输出",
+        "error": "抛出错误",
+        "assert": "断言",
+        "pcall": "保护调用",
+        "xpcall": "保护调用带处理",
+        "type": "类型",
+        "tostring": "转字符串",
+        "tonumber": "转数字",
+        "pairs": "遍历所有键值",
+        "ipairs": "遍历数组",
+        "version": "版本",
+        "randomInt": "随机整数",
+        "randomFloat": "随机小数",
+        "randomBool": "随机布尔",
+        "randomSign": "随机正负",
+        "randomColor": "随机颜色",
+        "call_on_scripts": "全局调用脚本",
+        "call": "特指调用脚本"
+    }
+}

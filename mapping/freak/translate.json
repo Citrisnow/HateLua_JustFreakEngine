@@ -1,0 +1,95 @@
+{
+    "any_translate_allow_parameter": {
+        "tag": [true, "tag"]
+    },
+
+    "param_semantics": {
+        "game:get": ["path:fstr", "default:var"],
+        "game:set": ["path:fstr", "value:var"],
+        "game:has": ["path:fstr"],
+        "game:clearVar": ["path:fstr"],
+
+        "net:send": ["event:tstr", "data:var", "to:var"],
+        "net:on": ["event:tstr", "fn:var"],
+        "net:off": ["event:tstr"],
+        "net:setState": ["key:key", "value:var"],
+        "net:getState": ["key:key"],
+        "net:setMine": ["key:key", "value:var"],
+        "net:getMine": ["key:key"],
+        "net:getOf": ["id:var", "key:key"],
+        "net:ownerOf": ["key:key"],
+        "net:share": ["key:key", "value:var"],
+        "net:shared": ["key:key", "player:var"],
+        "net:broadcast": ["event:tstr", "data:var"],
+        "net:sendTo": ["id:var", "event:tstr", "data:var"],
+
+        "events:on": ["name:fstr", "fnName:var"],
+        "events:off": ["name:fstr"],
+        "events:trigger": {
+            "params": ["name:fstr", "v1:var", "v2:var", "v3:var", "v4:var", "v5:var", "v6:var", "v7:var", "v8:var"],
+            "variadic": true
+        },
+        "events:count": ["name:fstr", "time:var"],
+        "events:last": ["name:fstr", "time:var"],
+
+        "call": ["scriptName:fstr", "funcName:var"],
+        "call_on_scripts": ["funcName:var"],
+
+        "sprite:addAnim": ["tag:tag", "name:fstr", "xmlAnim:fstr", "fps:var", "loop:var", "intro:var"],
+        "sprite:play": ["tag:tag", "name:fstr", "forced:var", "start:var", "reverse:var"],
+
+        "tw:any": ["t:tag", "obj:tag", "v:table", "time:var", "ease:fstr", "options:table"],
+
+        "noteskin:get": ["field:field"],
+        "noteskin:fromSkin": ["name:fstr", "field:field"],
+
+        "camera:follow": ["tag:tag", "spriteTag:tag", "lerp:var", "style:fstr"],
+        "camera:view": ["source:tag", "tag:tag", "x:var", "y:var", "width:var", "height:var"],
+        "camera:copy": ["tag:tag", "types:var", "sourceTag:tag"],
+        "camera:mirror": ["sourceTag:tag", "targetTags:table"],
+
+        "sprite:mask": ["tag:tag", "maskTag:tag", "invert:var"],
+        "sprite:clipTo": ["tag:tag", "target:tag", "radius:var", "inset:var"],
+        "sprite:overlap": ["tag1:tag", "tag2:tag", "pixel:var", "alphaTolerance:var"],
+
+        "particle:sprite": ["tag:tag", "spriteTag:tag", "quantity:var"]
+    },
+
+    "hook:sp_translate_allow_parameter": {
+        "onEvent(name, v1, v2, params, strumTime)": {
+            "name": [true, "var"],
+            "v1": [true, "var"],
+            "v2": [true, "var"],
+            "params": [true, "var"],
+            "strumTime": [true, "var"]
+        }
+    },
+
+    "object:method_function_translate_allow": {
+        "events:on(name, fnName)": {
+            "name": [true, "var"],
+            "fnName": [true, "var"]
+        },
+        "events:off(name)": {
+            "name": [true, "var"]
+        },
+        "events:trigger(name, v1 ... v8)": {
+            "name": [true, "var"],
+            "v1": [true, "var"],
+            "v2": [true, "var"],
+            "v3": [true, "var"],
+            "v4": [true, "var"],
+            "v5": [true, "var"],
+            "v6": [true, "var"],
+            "v7": [true, "var"],
+            "v8": [true, "var"]
+        },
+        "call(scriptName, funcName, ...)": {
+            "scriptName": [false, "str"],
+            "funcName": [true, "var"]
+        },
+        "call_on_scripts(funcName, ...)": {
+            "funcName": [true, "var"]
+        }
+    }
+}

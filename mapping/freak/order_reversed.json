@@ -1,0 +1,13 @@
+{
+    "order_reversed": {
+        "sprite": true,
+        "group": true,
+        "backdrop": true,
+        "text": true,
+        "bar": true,
+        "scrollbar": true,
+        "camera": true,
+        "tw": true,
+        "timer": true
+    }
+}
