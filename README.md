@@ -1,4 +1,4 @@
-#Hate Lua Just Freak Engine
+#HateLuaJustFreakEngine
 做着玩的一个项目，可以理解是一个**lua中文版本**吧，当然覆盖的也不全，强绑定**Freak Engine**生态，未来会持续优化
 
 本项目提供了一个**.hate**的编译器配置(CLT)，能够将符合特定语法的“中文 Lua 代码”，翻译成标准的英语Lua代码，并处理Freak Engine生态中的各种API映射
